@@ -3,12 +3,12 @@
   "version": "0.1.0",
   "description": "React 业务 Hooks",
   "scripts": {
-    "init": "pnpm install && pnpm run build",
-    "start": "pnpm run dev",
-    "dev": "dumi dev",
-    "build": "pnpm -r --filter=./packages/* run build",
-    "build:doc": "dumi build",
-    "test": "jest"
+    "init": "export NODE_OPTIONS=--openssl-legacy-provider && pnpm install && pnpm run build",
+    "start": "export NODE_OPTIONS=--openssl-legacy-provider && pnpm run dev",
+    "dev": "export NODE_OPTIONS=--openssl-legacy-provider && dumi dev",
+    "build": "export NODE_OPTIONS=--openssl-legacy-provider && pnpm -r --filter=./packages/* run build",
+    "build:doc": "export NODE_OPTIONS=--openssl-legacy-provider && dumi build",
+    "test": "export NODE_OPTIONS=--openssl-legacy-provider && jest"
   },
   "keywords": [
     "react",
