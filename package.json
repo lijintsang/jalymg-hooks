@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "React 业务 Hooks",
   "scripts": {
+    "init": "pnpm install && pnpm run build",
     "start": "pnpm run dev",
     "dev": "dumi dev",
     "build": "pnpm -r --filter=./packages/* run build",
