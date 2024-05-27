@@ -1,7 +1,7 @@
 {
   "name": "jalymg-hooks",
+  "version": "0.1.0",
   "description": "React 业务 Hooks",
-  "private": true,
   "scripts": {
     "start": "pnpm run dev",
     "dev": "dumi dev",
