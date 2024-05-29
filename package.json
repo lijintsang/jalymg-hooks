@@ -1,13 +1,17 @@
 {
   "name": "jalymg-hooks",
-  "version": "0.1.0",
   "description": "React 业务 Hooks",
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "clean-dist": "rimraf 'packages/hooks/{lib,es,node_modules,dist}'",
+    "clean": "pnpm run clean-dist && rimraf node_modules",
     "init": "export NODE_OPTIONS=--openssl-legacy-provider && pnpm install && pnpm run build",
     "start": "export NODE_OPTIONS=--openssl-legacy-provider && pnpm run dev",
     "dev": "export NODE_OPTIONS=--openssl-legacy-provider && dumi dev",
     "build": "export NODE_OPTIONS=--openssl-legacy-provider && pnpm -r --filter=./packages/* run build",
     "build:doc": "export NODE_OPTIONS=--openssl-legacy-provider && dumi build",
+    "pub": "pnpm run build && pnpm -r --filter=./packages/* publish",
+    "pub:beta": "pnpm run build && pnpm -r --filter=./packages/* publish --tag beta",
     "test": "export NODE_OPTIONS=--openssl-legacy-provider && jest"
   },
   "keywords": [
