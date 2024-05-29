@@ -1,6 +1,5 @@
 {
   "name": "jalymg-hooks",
-  "version": "0.1.2",
   "description": "React 业务 Hooks",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
