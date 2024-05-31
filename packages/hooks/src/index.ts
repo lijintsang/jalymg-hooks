@@ -1,4 +1,11 @@
-import useToggle from './useToggle';
+import useLatest from './useLatest';
 import useMemoizedFn from './useMemoizedFn';
+import useToggle from './useToggle';
+import useCreation from './useCreation';
 
-export { useToggle, useMemoizedFn };
+export {
+  useLatest,
+  useMemoizedFn,
+  useToggle,
+  useCreation,
+};

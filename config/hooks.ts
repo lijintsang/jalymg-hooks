@@ -5,6 +5,6 @@ export const menus = [
   },
   {
     title: '进阶',
-    children: ['useMemoizedFn'],
+    children: ['useLatest', 'useMemoizedFn', 'useCreation'],
   },
 ];
